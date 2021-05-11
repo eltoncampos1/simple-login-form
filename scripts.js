@@ -3,7 +3,6 @@ const button = document.querySelector('.login')
 const nome = document.querySelector('#name');
 const password = document.querySelector('#password');
 
-console.log(nome.value);
 
 button.onclick = () => {
     formValidate()
@@ -20,6 +19,9 @@ function formValidate() {
 
     if (password.value === '') {
         alert("Please insert your password")
+        return;
+    } else if(password.value.length < 6) {
+        alert("Password must be at least 6 digits")
         return;
     }
 
