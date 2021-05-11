@@ -1,11 +1,11 @@
-const form = document.querySelector('#sign-in-form');
+const button = document.querySelector('.login')
 
 const nome = document.querySelector('#name');
 const password = document.querySelector('#password');
 
 console.log(nome.value);
 
-form.onclick = () => {
+button.onclick = () => {
     formValidate()
 }
 

@@ -175,6 +175,7 @@ label[for="remember"] {
     height: 45px;
     color: #fff;
     font-size: 16px;
+    margin-top: 10px;
 }
 
 .form-container form button:hover {
@@ -208,4 +209,12 @@ label[for="remember"] {
 
 .switch-mode form label[for="name"]{
     color: #224957;
+}
+
+.switch-mode form button {
+    color: #224957;
+}
+
+.switch-mode ::-webkit-input-placeholder {
+    color: #fff;
 }
