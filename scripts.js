@@ -26,3 +26,18 @@ function formValidate() {
 
     alert('Form submited')
 }
+
+
+const switchButton = document.querySelector('.switch');
+
+function switchDarkMode() {
+    const main = document.querySelector('main');
+
+    main.classList.toggle('switch-mode')
+}
+
+
+switchButton.onclick = () => {
+    switchDarkMode()
+}
+
